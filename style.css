@@ -6,19 +6,21 @@
 
 :root {
     font-family: Helvetica, Arial, sans-serif;
+    --main-bg-colour: #c084fc;
+    --main-colour: aquamarine;
+    --second-colour: crimson;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     gap: 8px;
-
 }
 
 .sidebar {
     grid-row: 1 / 3;
-    background-color: #c084fc;
-    color: aquamarine;
+    background-color: var(--main-bg-colour);
+    color: var(--main-colour);
     font-weight: 900;
     font-size: 1.1rem;
     padding: 16px 8px;
@@ -45,16 +47,14 @@
     font-size: 1.5rem;
 }
 
-.sidebar img {
+.sidebar img,
+.sidebar .logo img {
     height: 24px;
-    width: auto;
     justify-self: center;
 }
 
 .sidebar .logo img {
     height: 48px;
-    width: auto;
-    justify-self: center;
 }
 
 .header {
