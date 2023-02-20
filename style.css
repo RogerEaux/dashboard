@@ -108,6 +108,14 @@
     justify-self: end;
 }
 
+.header-buttons button:hover {
+    filter: brightness(1.1);
+}
+
+.header-buttons button:active {
+    filter: brightness(0.85);
+}
+
 .bottom-header button {
     background-color: var(--main-bg-colour);
     color: var(--main-colour);
@@ -178,6 +186,7 @@
 .card-buttons {
     justify-self: end;
 }
+
 
 .main h1 {
     font-size: 1.2rem;
