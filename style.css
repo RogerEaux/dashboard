@@ -94,9 +94,6 @@
 }
 
 .greeting {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 4px;
     font-size: 1.4rem;
     align-content: center;
     justify-content: start;
@@ -104,6 +101,7 @@
 
 .greeting p:first-child {
     font-size: 0.9rem;
+    margin-bottom: 4px;
 }
 
 .header-buttons {
@@ -149,8 +147,18 @@
 .main {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr max-content;
-    grid-template-rows: max-content 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+}
+
+.main h1 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.main h2 {
+    font-size: 1.1rem;
+    font-weight: 900;
 }
 
 .dogs {
@@ -221,14 +229,31 @@
     border: none;
 }
 
-.main h1 {
-    font-size: 1.2rem;
+.trend {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+.trend p:first-child {
     font-weight: 900;
 }
 
-.main h2 {
-    font-size: 1.1rem;
-    font-weight: 900;
+.trend:nth-child(1) .profile-picture {
+    background-image: url(./images/trend-1.jpg);
+}
+
+.trend:nth-child(2) .profile-picture {
+    background-image: url(./images/trend-2.jpg);
+}
+
+.trend:nth-child(3) .profile-picture {
+    background-image: url(./images/trend-3.jpg);
+}
+
+.trend:nth-child(4) .profile-picture {
+    background-image: url(./images/trend-4.jpg);
 }
 
 .svg {
